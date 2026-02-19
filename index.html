@@ -33,6 +33,7 @@
  <main>
     <section id="about">
         <h2>About</h2>
+        <div class="row">
         <div class="section__description">
             <div class="section__description--wrapper">
             <p class="section__description--paragraph">
@@ -46,34 +47,42 @@
             <img src="./HTML Practise Assets/about.jpg" alt="">
         </figure>
         </div>
+        </div>
     </section>
     <section id="discord">
         <h2>Discord</h2>
-        <figure>
+        <div class="row">
+        <div class="section__description">
+        <figure class="about__image--wrapper">
             <img src="HTML Practise Assets/discord.png" alt="">
         </figure>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat nulla vero eveniet minus, quisquam illum iste modi voluptate sit architecto velit tenetur nihil cum consequatur tempore sunt culpa omnis!</p>
+        <div class="about__image--wrapper">
+            <p class="section__description--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat nulla vero eveniet minus, quisquam illum iste modi voluptate sit architecto velit tenetur nihil cum consequatur tempore sunt culpa omnis!</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit cumque deleniti praesentium pariatur accusantium consectetur tempore nemo autem velit. Ea, cupiditate corrupti saepe obcaecati voluptatum repellat facere eaque numquam pariatur!</p>
+        </div>
+        </div>
         </div>
     </section>
     <section id="contact">
+        <div class="section__description">
         <form action="">
             <span>Email</span>
-            <input type="text" placeholder="oscb29@example.com">
+            <input type="email" placeholder="oscb29@example.com">
              <span>Message</span>
-            <textarea type="text" placeholder="oscb29@example.com"></textarea>
-            <button>Submit</button>
+            <textarea type="text" placeholder="Cool website, let's get connected!"></textarea>
+            <button>Contact Us!</button>
         </form>
+    </div>
     </section>
+    
  </main>
  <footer>
-    <img src="HTML Practise Assets/FES.svg" alt="Frontend Simplified Logo">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="#courses">Courses</a>
+    <img class="footer__logo" src="HTML Practise Assets/FES.svg" alt="Frontend Simplified Logo">
+    <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="#courses">Courses</a>
     </div>
     <p>Copyright © Frontend Simplified</p>
  </footer>
