@@ -6,6 +6,10 @@ font-family: 'Inter', sans-serif;
 color: #243e63;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section{
     padding: 0 32px;
 }
@@ -36,11 +40,29 @@ display: flex;
 justify-content: space-between;
 }
 
+.nav__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+}
+
 .row{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    align-items: center;
+}
+
+.row__narrow {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 96px 0;
 }
 
 .nav__logo--title{
@@ -48,9 +70,7 @@ justify-content: space-between;
     font-size: 24px;
     margin-left: 12px;
     padding-bottom: 2px;
-    letter-spacing: 0.6px;
-    display: flex;
-    justify-content: center;
+    letter-spacing: 0.6px;   
 }
 
 .nav__links{
@@ -59,9 +79,25 @@ justify-content: space-between;
     padding-bottom: 2px;
 }
 
+.nav__link::after {
+    content: ""
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #6415ff;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
 a{
     display: inline;
     text-decoration: none;
+}
+
+img {
+    width: 100%;
 }
 
 .nav__link{
@@ -90,3 +126,31 @@ a{
     width: auto;
     transition: all 300ms ease;
 }
+
+.container {
+padding: 96px 0px;
+font: #243e63
+
+}
+
+.row {
+    font: 16px;
+    color: #243e63
+    
+
+}
+.header__description {
+    display: flex;
+    display: block;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 215px;
+    padding: 10px 32px;
+
+}
+
+span {
+    color: rgb(131, 3, 236);
+}
+
