@@ -450,7 +450,8 @@ width: 100%;
     display: flex;
     width: 60%;
     justify-items: center;
-    align-content: flex-end;
+   align-items: center;
+    position: relative;
 
 }
 
