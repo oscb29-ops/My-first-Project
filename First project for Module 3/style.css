@@ -958,6 +958,8 @@ margin-right: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .start__title {
@@ -992,23 +994,23 @@ margin-right: 64px;
 }
 
 .start__blob--2 {
-    position: relative;
+    position: absolute;
     top: 0px;
     right: 0px;
-    height: 15rem;
-    width: 30rem;
-    transform: translate(48rem, 10rem);
+    height: 20rem;
+    width: 20rem;
+    transform: translate(4rem, 4rem);
     color: rgb(80 17 204);
     opacity: 0.5;
 }
 
 .start__blob--1 {
-    position: relative;
+    position: absolute;
     bottom: 0px;
     left: 0px;
     height: 10rem;
     width: 10rem;
-    transform: translate(-1rem, 10rem);
+    transform: translate(4rem, -4rem);
     color: rgb(80 17 204);
     opacity: 0.5;
 }
